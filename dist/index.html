@@ -4,11 +4,433 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold m-10">Starter Kit for Mini Projects</h1>
+  <body>    
+    
+
+    <div class="w-full bg-white flex justify-between items-center">
+      <div>
+        <img src="assets/img/logo.svg" alt="" class="h-20">
+      </div>
+      <div>                    
+        <i class="fa fa-twitter p-3 rounded-full w-10 bg-primary text-white"></i>
+        <i class="fa fa-facebook p-3 rounded-full w-10 bg-primary text-white"></i>        
+        <i class="fa fa-linkedin p-3 rounded-full w-10 bg-primary text-white mr-4"></i>
+        MENU
+        <a href="javascript:void(0);" onclick="myFunction()">
+          <i class="fa fa-bars py-3 rounded-full w-10 text-gray-800" ></i>
+        </a>                
+      </div>
+
+    </div>
+
+    <div id="myLinks" class="flex flex-col w-full hidden">
+      <a href="javascript:void(0);" class="text-primary p-5">Home</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">About</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">Product</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">Events</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">Calendar</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">Blog</a>
+      <a href="javascript:void(0);" class="text-gray-800 p-5">Contact</a>
+      
+    </div>
+
+    <div class="bg-header w-full min-h-screen bg-no-repeat bg-cover">
+      <div class="flex flex-col items-start p-10 justify-center flex-auto w-full min-h-screen bg-yellow-500 bg-opacity-25 lg:w-1/2 md:bg-opacity-50">
+        <h3 class="text-2xl font-semibold text-gray-900">THE DIGITAL SAVVY PHARMA MARKETER 2020</h3>
+        <p class="text-xl text-white">“Must have tool for every pharma marketer ”</p>
+        <button class="bg-white py-2 px-3 my-2 hover:bg-gray-200"><i class="fa fa-play-circle" aria-hidden="true"></i>
+          Download</button>
+      </div>
+    </div>
+
+    <div class="flex flex-col items-center mt-10">
+      <h3 class="text-2xl font-semibold text-gray-900">
+        COMPANY
+      </h3>
+      <h4 class="text-2xl font-semibold text-red-300 italic">
+        Services
+      </h4>
+      
+      <div class="flex items-center justify-around w-11/12 mx-auto">
+        <div class="flex items-center">
+          <div class="w-8/12 text-right">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Customer Experience
+            </h3>
+            <h4 class="text-md text-red-300">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-right mr-5">
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-left ml-5">
+          </div>
+          <div class="w-8/12 text-left">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Co-commercialization
+            </h3>
+            <h4 class="text-md text-red-300 ">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-around w-11/12 mx-auto">
+        <div class="flex items-center">
+          <div class="w-8/12 text-right">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Customer Experience
+            </h3>
+            <h4 class="text-md text-red-300">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-right mr-5">
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-left ml-5">
+          </div>
+          <div class="w-8/12 text-left">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Co-commercialization
+            </h3>
+            <h4 class="text-md text-red-300 ">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex items-center justify-around w-11/12 mx-auto">
+        <div class="flex items-center">
+          <div class="w-8/12 text-right">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Customer Experience
+            </h3>
+            <h4 class="text-md text-red-300">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-right mr-5">
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="w-3/12">
+            <img src="assets/img/icon.png" alt="" class="h-20 w-20 float-left ml-5">
+          </div>
+          <div class="w-8/12 text-left">
+            <h3 class="text-2xl font-semibold text-gray-900">
+              Co-commercialization
+            </h3>
+            <h4 class="text-md text-red-300 ">
+              A must have tool for pharma marketers to gain insights into the latest channel preferences, marketing budget allocations, technology utilization
+            </h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <div class="bg2-header w-full min-h-screen bg-no-repeat bg-cover mt-20">
+      <h1 class="text-white text-4xl font-bold pt-20 text-center uppercase">
+        Inspirational Testimony
+      </h1>
+      <div class="swiper-container h-full mt-20">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          <div class="swiper-slide">
+            <div class="flex flex-col items-center justify-between ">
+              <div class="p-5">
+                <img src="assets/img/profile.png" alt="">
+              </div>
+              <div>
+                <p class="p-5 text-white text-white">As one of the cofounders and the CEO, He is 
+                  responsible for the company’s strategy.</p>
+                  <span class="p-5  text-white font-semibold">
+                    CE0
+                  </span>              
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      });
+    </script>
+
+
+
+    <div class="w-9/12 mx-auto mt-16">
+      <h2 class="text-4xl font-bold uppercase py-5">Upcoming Events</h2>
+      <div class="flex my-5">
+        <div class="w-2/12">
+            <img src="assets/img/party.jpg" alt="">
+        </div>
+        <div class="10/12 flex flex-col justify-around items-start pl-10">
+          <h3 class="text-2xl font-semibold">Global Pharmaceutical Regulatory Affairs Summit</h3>
+          <span>
+            <i class="fa fa-calendar text-gray-600 float-left " aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              Monday, 8:00 AM - Tuesday, 8:00 PM
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-compass text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-red-300 pl-5">
+              Madission Hotel
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-building text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              203 St.Mountain View, San Fransisco, California, USA
+            </p>
+          </span>
+          <button class="bg-primary text-white px-3 py-2">Read More</button>
+        </div>
+      </div>
+      <div class="flex my-5">
+        <div class="w-2/12">
+            <img src="assets/img/party.jpg" alt="">
+        </div>
+        <div class="10/12 flex flex-col justify-around items-start pl-10">
+          <h3 class="text-2xl font-semibold">Global Pharmaceutical Regulatory Affairs Summit</h3>
+          <span>
+            <i class="fa fa-calendar text-gray-600 float-left " aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              Monday, 8:00 AM - Tuesday, 8:00 PM
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-compass text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-red-300 pl-5">
+              Madission Hotel
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-building text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              203 St.Mountain View, San Fransisco, California, USA
+            </p>
+          </span>
+          <button class="bg-primary text-white px-3 py-2">Read More</button>
+        </div>
+      </div>
+      <div class="flex my-5">
+        <div class="w-2/12">
+            <img src="assets/img/party.jpg" alt="">
+        </div>
+        <div class="10/12 flex flex-col justify-around items-start pl-10">
+          <h3 class="text-2xl font-semibold">Global Pharmaceutical Regulatory Affairs Summit</h3>
+          <span>
+            <i class="fa fa-calendar text-gray-600 float-left " aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              Monday, 8:00 AM - Tuesday, 8:00 PM
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-compass text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-red-300 pl-5">
+              Madission Hotel
+            </p>
+          </span>
+          <span>
+            <i class="fa fa-building text-gray-600 float-left" aria-hidden="true"></i>
+            <p class="italic text-sm text-gray-600 pl-5">
+              203 St.Mountain View, San Fransisco, California, USA
+            </p>
+          </span>
+          <button class="bg-primary text-white px-3 py-2">Read More</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-gray-100">
+      <div class="w-11/12 mx-auto flex flex-col items-center py-5">
+        <h1 class="text-4xl">Recent Blog</h1>
+        <p class="italic font-semibold text-primary">Our Blog</p>
+        <div class="flex justify-around p-5">
+          <div class="flex flex-col w-3/12 shadow-lg hover:shadow-2xl">
+            <img src="assets/img/blog.jpg" alt="">
+            <div class="flex">
+              <div class="w-1/3 flex flex-col text-center bg-secondary text-primary">
+                <h2 class="text-4xl font-semibold">18</h2>
+                <p>January</p>
+                <p>2019</p>              
+              </div>
+              <div class="w-2/3 pl-2 bg-white">
+                <h3 class="text-xl font-semibold">Press Release</h3>
+                <p>Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for Customer Excellence — from Consulting to Operations</p>
+              </div>
+  
+            </div>
+          </div>
+          <div class="flex flex-col w-3/12 shadow-lg hover:shadow-2xl">
+            <img src="assets/img/blog.jpg" alt="">
+            <div class="flex">
+              <div class="w-1/3 flex flex-col text-center bg-secondary text-primary">
+                <h2 class="text-4xl font-semibold">18</h2>
+                <p>January</p>
+                <p>2019</p>              
+              </div>
+              <div class="w-2/3 pl-2 bg-white">
+                <h3 class="text-xl font-semibold">Press Release</h3>
+                <p>Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for Customer Excellence — from Consulting to Operations</p>
+              </div>
+  
+            </div>
+          </div>
+          <div class="flex flex-col w-3/12 shadow-lg hover:shadow-2xl">
+            <img src="assets/img/blog.jpg" alt="">
+            <div class="flex">
+              <div class="w-1/3 flex flex-col text-center bg-secondary text-primary">
+                <h2 class="text-4xl font-semibold">18</h2>
+                <p>January</p>
+                <p>2019</p>              
+              </div>
+              <div class="w-2/3 pl-2 bg-white">
+                <h3 class="text-xl font-semibold">Press Release</h3>
+                <p>Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for Customer Excellence — from Consulting to Operations</p>
+              </div>
+  
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="bg-gray-900 p-10">
+      <div class="flex flex-col items-center justify-between my-5">
+        <h2 class="uppercase text-white text-4xl ">Newsletter</h2>
+        <div class="my-5">
+          <input type="text" class="float-left h-10 px-3 text-sm text-gray-800" placeholder="Enter Email Address">
+          <input type="button" value="Submit" class="bg-primary h-10 px-3 text-sm">
+        </div>
+        <div class="my-5 flex">
+          
+          <p class="text-md text-white hover:text-gray-500">@2019 CopyRight. All Rights Reserved</p>
+          <p class="text-white px-10">|</p>          
+          <a href="" class="text-md text-white hover:text-gray-500">Contact Us</a>
+          <p class="text-white px-10">|</p>
+          <a href="" class="text-md text-white hover:text-gray-500">Privary Policy</a>
+          <p class="text-white px-10">|</p>          
+          <a href="" class="text-md text-white hover:text-gray-500">CSR Policy</a>
+          
+        </div>
+      </div>
+    </div>
+    
+    
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
